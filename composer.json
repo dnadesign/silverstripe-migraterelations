@@ -1,0 +1,11 @@
+{
+	"name": "dnadesign/migraterelations",
+	"description": "Migrates specific relations defined in yml.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "migrate", "migrations"],
+	"require": {
+		"composer/installers": "*",
+		"silverstripe/cms": "*",
+		"silverstripe/framework": "*"
+	}
+}
