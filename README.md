@@ -5,6 +5,12 @@ Migrates specific silverstripe relations defined in yml
 1 - Update your classes to use the new relations.  
 2 - Define the fields you want to migrate in a yml file. eg: 
 ```
+---
+Name: migration
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
 Migrate:
  remove_table:
    0:
