@@ -32,10 +32,10 @@ class MigrateRelationsTask extends BuildTask
      */
     public function performMigration()
     {
-        $remove = Config::inst()->get('Element', 'remove_table');
-        $db_field = Config::inst()->get('Element', 'db_field');
-        $has_one = Config::inst()->get('Element', 'has_one');
-        $many_many = Config::inst()->get('Element', 'many_many');
+        $remove = Config::inst()->get('Migrate', 'remove_table');
+        $db_field = Config::inst()->get('Migrate', 'db_field');
+        $has_one = Config::inst()->get('Migrate', 'has_one');
+        $many_many = Config::inst()->get('Migrate', 'many_many');
 
         $result = '';
 
