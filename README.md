@@ -4,12 +4,11 @@ Migrates specific silverstripe relations defined in yml
 ## How to use
 1 - Update your classes to use the new relations.  
 2 - Define the fields you want to migrate in a yml file. eg: 
+
 ```
+
 ---
 Name: migration
-After:
-  - 'framework/*'
-  - 'cms/*'
 ---
 Migrate:
  remove_table:
@@ -38,12 +37,7 @@ Migrate:
      owner_current: 'CurrentManyManyOwnerClassName'
      owner_new: 'NewManyManyOwnerClassName'
      field_name: 'RelationName'
+     
 ```
 
-
 3 - Run dev/tasks/MigrateRelationsTask
-
-
-## TODO
-* Make this task extend MigrationTask and provide rollback options
-* Tests
